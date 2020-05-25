@@ -1,5 +1,6 @@
 # Deep Javascript Foundations v3
 ## Kyle Simpson
+# Types - Section 1
 
 ### FALSE: In javascript everything is an object
 
