@@ -6,13 +6,14 @@
 
 ### Instead, javascript is made up of primitive types
 - a lot of things can *behave* like objects in JS, but to say the above statement, as is often claimed is not correct
-- JS **primitive types** are:
+
+## JS **primitive types** are:
     - undefined
     - null
     - boolean
     - string
     - symbol 
-    - number and
+    - number 
     - object
     - symbol
     
@@ -68,5 +69,24 @@
         - "object"??
     - Instead there are other things to help you. We have **array.isArray**
         - this will let you know if its an array.
+
+## Undefined -vs- Undeclared
+- **Undefined** 
+    - when something doesnt even exist
+    - theres definately a variable and at the moment, it has no value
+- **Undeclared** its never been created in a scope we have access to
+- **Uninitalised**
+    - aka TDZ - temporal dead zone
+- **NAN** best represented as **AN INVALID NUMBER**
+    - nan stands for not a number
+        - what its better thought of as is: special sentinal value that represents an invalid number or **invalid number**
+    - comes to us in JS from the IEEE 754 numbers specification
+    - **NAN is the only value that does not equal it's self.**
+    - so if you have 
+        - var myCatsAge = Number("N/A"); // NaN
+        - myCatsAge === myCatsAge; // False OOPS!!!
+#### if you do any mathematical equasion on NAN, it returns NAN
+- nan will propagate through your code.
+
 
 
